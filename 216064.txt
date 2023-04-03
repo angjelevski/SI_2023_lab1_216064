@@ -1,0 +1,83 @@
+1. Веќе имав креирано GitHub профил и инсталирано git
+
+2. Го променив името на default branch во 'master'
+
+3. Креирав репозиториум на GitHub именуван SI_2023_lab1_216064
+
+4. Направив локален директориум со истото име и го иницијализирав Git со командата:
+	$ git init
+
+5. $ git remote add origin https://github.com/angjelevski/SI_2023_lab1_216064.git
+	Со оваа команда го поврзав локалното repo со remote repo
+
+6. Креирав README.md датотека со командата:
+	$ nano README.md
+   Потоа ја додов датотеката и направив commit со наредбите:
+	$ git add README.md
+	$ git commit -m "Initial commit"
+
+7. Креирав SILab1.java датотека со командата:
+	$ nano SILab1.java
+   Потоа ја додов датотеката и направив commit со наредбите:
+	$ git add SILab1.java
+	$ git commit -m "Add java class"
+
+8. $ git push -u origin master
+
+9. Отворив три гранки со наредбите, пришто останав на master гранката:
+	$ git branch bug1
+	$ git branch bug2
+	$ git branch bug3
+
+10. $ git checkout bug1
+
+11. Откако ја направив потребната промена во for-циклусот
+    ги додадов сите фајлови (во случајов еден) и направив commit со една наредба:
+	$ git commit -am "Fix wrong loop for reading"
+    Направив проверка на статусот со наредбата:
+	$ git status
+
+12. $ git checkout bug2
+
+13. Исто како и во чекор 11: 
+	$ git commit -am "Fix wrong condition in filterOddNumbers"
+
+14. $ git checkout bug3
+
+15. По промената на две места во SILab1.java направив commit со наредбата:
+	$ git commit -am "Fix method sumEvenNumbers"
+
+16. Со следните наредби ги додадов сите гранки од локалниот во remote репозиториум
+	$ git checkout master
+	$ git push origin --all
+
+17. Веќе се префрлив на гранката master во претходниот чекор
+
+18. $ git merge bug1
+    Спојувањето се изврши со Fast-forward, пришто не се појави конфликт
+
+19. $ git push origin --all
+
+20. $ git merge bug2
+    Auto-merging SILab1.java
+    Merge commit
+    Спојувањето се изврши рекурзивно
+
+21. $ git pull origin master
+    $ git push origin --all
+
+22. $ git checkout bug3
+
+23. Успешно направен rebase на bug3 кон master
+	$ git rebase master
+
+24. $ git checkout master
+
+25. $ git merge bug3
+    Fast-forward
+
+26. $ git fetch --all
+    $ git push origin --all --force
+
+27. $ git --no-pager log
+ 

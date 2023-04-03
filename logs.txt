@@ -1,0 +1,36 @@
+commit 7a515f74c7a960b3428bc6da5113d4a5a3125dd2 (HEAD -> master, origin/master, origin/bug3, bug3)
+Author: Martin Angjelevski <angjelevskimartin@gmail.com>
+Date:   Mon Apr 3 19:35:11 2023 +0200
+
+    Fix method sumEvenNumbers
+
+commit 38489224356418fdc99b88ca6c486614da58ae2e
+Merge: d0a8ebf 0c65135
+Author: Martin Angjelevski <angjelevskimartin@gmail.com>
+Date:   Mon Apr 3 23:38:22 2023 +0200
+
+    Merge branch 'bug2'
+
+commit 0c651352b676a4d8a180f75ad90c651b1ab727af (origin/bug2, bug2)
+Author: Martin Angjelevski <angjelevskimartin@gmail.com>
+Date:   Mon Apr 3 19:26:55 2023 +0200
+
+    Fix wrong condition in filterOddNumbers
+
+commit d0a8ebf039ba3b35c6b765945dbc36a6cf248ea9 (origin/bug1, bug1)
+Author: Martin Angjelevski <angjelevskimartin@gmail.com>
+Date:   Mon Apr 3 19:19:36 2023 +0200
+
+    Fix wrong loop for reading
+
+commit 5b9bdd902cdec97bae9c33fa62a9076cd8ba0ebd
+Author: Martin Angjelevski <angjelevskimartin@gmail.com>
+Date:   Mon Apr 3 18:18:54 2023 +0200
+
+    Add java class
+
+commit 580776338600f3d365a7d8005c327f0ac4a8c79f
+Author: Martin Angjelevski <angjelevskimartin@gmail.com>
+Date:   Mon Apr 3 18:11:16 2023 +0200
+
+    Initial commit
